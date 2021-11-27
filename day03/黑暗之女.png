@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="gbk">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <meta name="tgtest-ignore" content="all">
+  <!--<meta name="viewport" id="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover">-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="keywords" content="英雄联盟,lol,league of legends,lol攻略,lol视频,lol视频攻略,lol英雄资料,lol战争学院,小苍解说视频,101战争学院,英雄" />
+  <meta name="description" content="英雄联盟101战争学院，推荐攻略，视频攻略，小苍解说视频" />
+  <title>攻略中心-英雄联盟官方网站-腾讯游戏</title>
+  <script>
+    //屏幕适应
+    (function (win, doc) {
+      if (!win.addEventListener) return;
+
+      function setFont() {
+        var html = document.documentElement;
+        var k = 2560;
+        if (html.clientWidth / k * 100 >= 100) html.style.fontSize = '100px';
+        else if (html.clientWidth / k * 100 <= 64) html.style.fontSize = '64px';
+        else html.style.fontSize = html.clientWidth / k * 100 + 'px';
+        // html.style.fontSize = html.clientWidth / k * 100 + 'px';
+      }
+
+      setFont();
+      setTimeout(function () {
+        setFont();
+      }, 300);
+      doc.addEventListener('DOMContentLoaded', setFont, false);
+      win.addEventListener('resize', setFont, false);
+      win.addEventListener('load', setFont, false);
+    })(window, document);
+    // (function (win, doc) {
+    //   if (!win.addEventListener) return;
+    //   function setFont() {
+    //     var html = document.documentElement;
+    //     var k = 2560;
+    //     if (html.clientWidth / k * 100 >= 100) html.style.fontSize = '100px';
+    //     else if (html.clientWidth / k * 100 <= 64) html.style.fontSize = '64px'; else html.style.fontSize = html.clientWidth / k * 100 + 'px';
+    //   }
+    //   setFont();
+    //   setTimeout(function () {
+    //     setFont();
+    //   }, 300);
+    //   doc.addEventListener('DOMContentLoaded', setFont, false);
+    //   win.addEventListener('resize', setFont, false);
+    //   win.addEventListener('load', setFont, false);
+    // })(window, document);
+  </script>
+  <style>
+    body {background-color: #111d29;color: #ffffff;font-size: 20px!important;}
+    .slide-fade-enter-active ,
+    .slideUp-fade-enter-active {
+      transition: all .8s ease;
+    }
+    .slide-fade-leave-active,
+    .slideUp-fade-leave-active {
+      transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .slide-fade-enter,
+    .slide-fade-leave-to
+      /* .slide-fade-leave-active for below version 2.1.8 */ {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+    .slideUp-fade-enter,
+    .slideUp-fade-leave-to
+      /* .slide-fade-leave-active for below version 2.1.8 */ {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+
+  </style>
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/comm.css?20210528">
+  <link rel="stylesheet" href="css/rank.css?20211027">
+</head>
+<body>
+  <div class="app-wrapper" id="app">
+    <transition name="slide-fade" mode="out-in">
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+    </transition>
+  </div>
+
+
+  <script src="//js.aq.qq.com/js/aq_common.js"></script>
+  <script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js" charset="gbk"></script>
+  <script src="//game.gtimg.cn/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+  <script src="js/lib/util.charset.js"></script>
+  <script src="js/lib/vendor.js" charset="utf-8"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/echarts.min.js" charset="utf-8"></script>
+  <script src="js/styledark.js" charset="utf-8"></script>
+  <script src="js/base.js?202103191430"></script>
+  <script src="js/api.js?20210528"></script>
+  <script src="js/store.js?202103191430"></script>
+  <script src="js/app.js?20210528"></script>
+  <script>
+
+    var setSite = {
+      siteType: "101",
+      pageType: "main",
+      pageName: "攻略中心",
+      project: "base",
+      osact: "pc"
+    };
+    if (typeof(pgvMain) == 'function') pgvMain();
+  </script>
+</body>
+
+</html>
