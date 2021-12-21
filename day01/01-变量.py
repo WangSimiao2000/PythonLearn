@@ -13,7 +13,23 @@
     后续多次出现相同名称：赋值
 """
 
-num = 100
-num = 1000
 
-print(num)
+def JiSuanQi(num_1, flag, num_2):
+    ans = 'erro'
+    if flag == '+':
+        ans = num_1 + num_2
+    if flag == '-':
+        ans = num_1 - num_2
+    if flag == '*':
+        ans = num_1 * num_2
+    if flag == '/':
+        ans = num_1 / num_2
+    return ans
+
+
+ans_ = JiSuanQi(1, '+', 2)
+print(ans_)
+
+pycharm idea
+
+
